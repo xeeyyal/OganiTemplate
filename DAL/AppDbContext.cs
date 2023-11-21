@@ -9,7 +9,6 @@ namespace FrontToBack_2.DAL
         {
 
         }
-
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Departament> Departaments { get; set; }
         public DbSet<Product> Products { get; set; }
