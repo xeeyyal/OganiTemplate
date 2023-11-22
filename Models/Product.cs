@@ -1,8 +1,11 @@
-﻿namespace FrontToBack_2.Models
+﻿using Microsoft.Build.Framework;
+
+namespace FrontToBack_2.Models
 {
     public class Product
     {
         public int Id { get; set; }
+        [Required()]
         public string Name { get; set; }
         public string ImagegUrl { get; set; }
         public decimal Price { get; set; }

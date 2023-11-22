@@ -16,7 +16,7 @@ namespace FrontToBack_2.Controllers
 
         public async Task<IActionResult> Index()
         {
-            List<Product> dbProducts = await _context.Products.Include(p=>p.).ToListAsync();
+            List<Product> dbProducts = await _context.Products.ToListAsync();
             if (dbProducts is null) return NotFound();
             return View(dbProducts);
         }
